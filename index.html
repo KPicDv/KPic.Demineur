@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<title>Démineur</title>
+</head>
+
+<body>
+	<div id="page">
+		<div id="content">
+			<h1>Démineur</h1>
+
+			<div id="players-selection">
+				<h2>Sélection des joueurs</h2>
+
+				<div class="player-selection blue blue-darken-border">
+					<label for="blue-player">Nom du joueur bleu</label>
+					<input type="text" id="blue-player" value="Moi" autofocus>
+				</div>
+				
+				<div class="player-selection red red-darken-border">
+					<label for="red-player">Nom du joueur rouge</label>
+					<input type="text" id="red-player" value="Toi">
+				</div>
+
+				<div class="center">
+					<button id="play">Jouer</button>
+				</div>
+			</div>
+	
+			<div id="game" hidden>
+                <h2 id="player-turn">A <span id="current-player-name"></span> de jouer !</h2>
+                <h2 id="result"></h2>
+				<div class="center">
+					<button id="play-again" hidden>Recommencer</button>
+				</div>
+			</div>
+		</div>
+		
+		<div id="blue-player-score" class="hidden">
+			<div id="blue-player-name" class="player-name"></div>
+			<div id="blue-player-score-value">0</div>
+		</div>
+		<div id="red-player-score" class="hidden">
+			<div id="red-player-name" class="player-name"></div>
+			<div id="red-player-score-value">0</div>
+		</div>
+	</div>
+	
+
+	<script src="app.js"></script>
+</body>
+</html>

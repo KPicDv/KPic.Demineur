@@ -1,0 +1,191 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: #212121;
+    margin: 0;
+    color: #FFF;
+    font-family: 'Roboto';
+}
+
+#page {
+    display: flex;
+    height: 100%;
+}
+
+#content {
+    background-color: #212121;
+    width: 514px;
+    margin: auto;
+    padding-bottom: 20px;
+    border-radius: 4px;
+}
+
+h1,
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+label {
+	display: block;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+input {
+    background: transparent;
+    width: 250px;
+    border: none;
+    border-bottom: 2px solid #FFF;
+    padding: 12px;
+    text-align: center;
+    color: #FFF;
+    outline: none;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+input#blue-player:focus {
+    background: #1565C0;
+}
+
+input#red-player:focus {
+    background: #C62828;
+}
+
+.player-selection {
+    padding: 10px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    text-align: center;
+    border: solid 4px;
+    margin-top: 20px;
+}
+
+.center {
+    text-align: center;
+}
+
+#play {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#play,
+#play-again {
+    background: #FFF;
+    padding: 8px 16px;
+    border: none;
+    font-size: 22px;
+}
+
+.blue {
+    background: #1976D2;
+}
+
+.blue-darken {
+    background: #1565C0;
+}
+
+.blue-darken-border {
+    border-color: #1565C0;
+}
+
+.red {
+    background: #D32F2F;
+}
+
+.red-darken {
+    background: #C62828;
+}
+
+.red-darken-border {
+    border-color: #C62828;
+}
+
+button {
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+table {
+	border-collapse: collapse;
+    margin: 20px auto;
+}
+
+td {
+	width: 32px;
+	height: 32px;
+	border: 1px solid black;
+	cursor: pointer;
+	text-align: center;
+	font-weight: bold;
+	user-select: none;
+}
+
+td:not(.selected) {
+	background: -webkit-linear-gradient( 135deg, #CCC, #777);
+	background:    -moz-linear-gradient( 135deg, #CCC, #777);
+	background:     -ms-linear-gradient( 135deg, #CCC, #777);
+	background:      -o-linear-gradient( 135deg, #CCC, #777);
+	background:         linear-gradient( 135deg, #CCC, #777);
+}
+
+td.selected {
+    background: #CCC;
+}
+
+td img {
+    display: block
+}
+
+#player-turn,
+#result {
+    line-height: 32px;
+}
+
+#current-player-name,
+#result span {
+    display: inline-block;
+    padding: 1px 8px;
+    border-radius: 3px;
+}
+
+#blue-player-score,
+#red-player-score {
+    background: #212121;
+    position: fixed;
+    top: 10px;
+    padding: 10px;
+    width: 150px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+#blue-player-score {
+    left: 10px;
+}
+
+#red-player-score {
+    right: 10px;
+}
+
+#blue-player-name,
+#red-player-name {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#blue-player-score-value,
+#red-player-score-value {
+    font-size: 48px;
+}
